@@ -1,0 +1,3 @@
+# Elixir Enum.each List Modification Issue
+
+This example demonstrates a common misconception when working with `Enum.each` in Elixir.  Attempting to modify a list in place within the `Enum.each` function does not affect the original list because lists in Elixir are immutable.  The `List.delete` function creates a *new* list without modifying the original.  This example shows how this behavior can lead to unexpected results.  The solution demonstrates the correct approach using `Enum.filter` to achieve the desired outcome.
